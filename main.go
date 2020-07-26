@@ -15,13 +15,20 @@ var (
 func main() {
 	flag.Parse()
 
-	if *checkfile == "" || *checkDir == "" {
+	if *checkfile == "" {
+		part.Logf().E("build:")
 		part.Logf().E("-i {checkDir} -o {checkfile} -s {SplitString}(default:\"\\n\")")
 		part.Logf().E("eg. go run main.go -i ./ -o t.txt")
+		part.Logf().E("")
+		part.Logf().E("check:")
+		part.Logf().E("-o {checkfile} -s {SplitString}(default:\"\\n\")")
+		part.Logf().E("eg. go run main.go -o t.txt")
 		return
 	}
 
-	part.Checkfile().Build(*checkfile,*checkDir,*SplitString)
-
-	part.Checkfile().CheckList(*checkfile,*checkDir,*SplitString)
+	if *checkDir != "" {
+		part.Checkfile().Build(*checkfile,*checkDir,*SplitString)
+	}
+	
+	part.Checkfile().CheckList(*checkfile,*SplitString)
 }
