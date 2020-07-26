@@ -2,7 +2,9 @@ name: Go
 
 on:
   release:
-    types: [released]
+    types: [published]
+    branches:
+    - master
 
 jobs:
 
@@ -28,15 +30,17 @@ jobs:
             dep ensure
         fi
 
-    - name: Build
-      run: go build -v .
-
     - name: Test
       run: go test -v .
-    
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2
+
+    - name: Build
+      run: go build -v .
+      
+    - name: Zip files
+      working-directory: ./
+      run: zip checkFile-${{ github.event.release.tag_name }}.zip checkFile
+    - name: Upload to release
+      uses: AButler/upload-release-assets@v2.0
       with:
-        # Artifact name
-        # A file, directory or wildcard pattern that describes what to upload
-        path: checkFile
+        files: 'checkFile-${{ github.event.release.tag_name }}.zip'
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
