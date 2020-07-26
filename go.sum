@@ -1,3 +1,5 @@
+github.com/klauspost/compress v1.10.10 h1:a/y8CglcM7gLGYmlbP/stPE5sR3hbhFRUjCBfd/0B3I=
+github.com/klauspost/compress v1.10.10/go.mod h1:aoV0uJVorq1K+umq18yTdKaF57EivdYsUV+/s2qKfXs=
 github.com/qydysky/part v0.0.0-20200725224333-a1646b1f0d11 h1:YtyFdBl9ua7vKuWpWZUak4oKAjeoNtDhx14t42dtAJc=
 github.com/qydysky/part v0.0.0-20200725224333-a1646b1f0d11/go.mod h1:01Tj5Lnf/ryKKHp1csa3mk4354nRcSHecRDWDzHNjro=
 github.com/qydysky/part v0.0.0-20200725233008-2f6f601d13e9 h1:QXtE4W4LpDLJwmQ4dqim7cVceQYrSd4hpsS1aCeWrvo=
@@ -6,3 +8,5 @@ github.com/qydysky/part v0.0.0-20200726030509-a8c4e2a4c40b h1:jCb8ZCx+8/w5hV06u2
 github.com/qydysky/part v0.0.0-20200726030509-a8c4e2a4c40b/go.mod h1:01Tj5Lnf/ryKKHp1csa3mk4354nRcSHecRDWDzHNjro=
 github.com/qydysky/part v0.0.0-20200726134617-30f45753b067 h1:bRUurbe/PufFZ7rSr2YiZSOFPDQe4d6KV2xLNdgUIP0=
 github.com/qydysky/part v0.0.0-20200726134617-30f45753b067/go.mod h1:01Tj5Lnf/ryKKHp1csa3mk4354nRcSHecRDWDzHNjro=
+github.com/qydysky/part v0.0.0-20200726211655-392687193d39 h1:dfoMXzsZMNNIEJQAPTIfpLrBv4dbyz8uMlZrF/CR7Z4=
+github.com/qydysky/part v0.0.0-20200726211655-392687193d39/go.mod h1:HBIiysIQhP2uWMtdWRUTd+H81wNH2MrwOOCzhQhRTa4=
