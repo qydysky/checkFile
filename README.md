@@ -1,5 +1,5 @@
 # main
-![Go](https://github.com/qydysky/checkFile/workflows/Go/badge.svg)
+![release](https://github.com/qydysky/checkFile/workflows/release/badge.svg)
 #### 介绍
 创建/检查文件存在
 
